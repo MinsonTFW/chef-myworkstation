@@ -2,6 +2,7 @@ system_policies = 'HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Syste
 
 registry_key system_policies do
   values [
-      {:name => 'EnableLUA', :type => :dword, :data => 0}
+      { name: 'EnableLUA', type: :dword, data: 0 },
+      { name: 'ConsentPromptBehaviorAdmin', type: :dword, data: 0 },
 ]
 end
